@@ -44,7 +44,10 @@ print(fillterUsers)
 array = [
     ["Ruffy", "captain"],
     ["Zoro", "combatant"],
+    ["Nami", "navigator"],
 ]
 
 arrayIndex0 = [i[0] for i in array]
+arrayIndex1 = [i[1] for i in array]
 print(arrayIndex0)
+print(arrayIndex1)
