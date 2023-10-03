@@ -51,3 +51,17 @@ arrayIndex0 = [i[0] for i in array]
 arrayIndex1 = [i[1] for i in array]
 print(arrayIndex0)
 print(arrayIndex1)
+
+# 次の連想配列(member)の中から35歳以上の名前(name)の値だけを抜き取った配列が
+# 返るような関数getNameOver35を作成して下さい。
+
+members = [
+    {"Name": "松井", "Age": 39, "Gender": "male"},
+    {"Name": "今田", "Age": 34, "Gender": "female"},
+    {"Name": "鈴木", "Age": 24, "Gender": "male"},
+    {"Name": "山田", "Age": 56, "Gender": "male"},
+    {"Name": "田中", "Age": 89, "Gender": "female"},
+]
+
+getNameOver35 = [member["Name"] for member in members if member["Age"] >= 35]
+print(getNameOver35)

@@ -2,9 +2,9 @@ import random
 import tmp
 
 print('じゃんけんをはじめます')
-player_name = input('名前を入力してください：')
+player_name: str = input('名前を入力してください：')
 print('何を出しますか？（0: グー, 1: チョキ, 2: パー）')
-player_hand = int(input('数字で入力してください：'))
+player_hand: int = int(input('数字で入力してください：'))
 
 if tmp.validate(player_hand):
     computer_hand = random.randint(0, 2)
